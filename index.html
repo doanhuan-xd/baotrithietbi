@@ -34,6 +34,48 @@
     </style>
 </head>
 <body class="bg-gray-100">
-<!-- ...rest of app code... -->
+    <!-- Login & Register Views -->
+    <div id="auth-view" class="view active flex items-center justify-center h-screen">
+        <div id="login-container" class="w-full max-w-sm">
+            <div class="p-8 bg-white shadow-lg rounded-lg">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">CMMS Pro</h2>
+                <p class="text-center text-gray-500 mb-8">Đăng nhập để tiếp tục</p>
+                <div class="space-y-4">
+                    <div>
+                        <label for="login-name" class="text-sm font-medium text-gray-700">Tên đăng nhập</label>
+                        <input id="login-name" type="text" placeholder="vd: quanly" class="w-full p-3 mt-1 border border-gray-300 rounded-lg">
+                    </div>
+                    <div>
+                        <label for="login-password" class="text-sm font-medium text-gray-700">Mật khẩu</label>
+                        <input id="login-password" type="password" placeholder="Mật khẩu là: 123" class="w-full p-3 mt-1 border border-gray-300 rounded-lg">
+                    </div>
+                    <button id="login-btn" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700">Đăng nhập</button>
+                    <p class="text-xs text-center text-gray-400 pt-2">Tên mẫu: congnhan, kythuat, quanly</p>
+                </div>
+            </div>
+            <p class="text-center mt-4 text-sm">Chưa có tài khoản? <button id="show-register-btn" class="font-semibold text-blue-600 hover:underline">Đăng ký ngay</button></p>
+        </div>
+
+        <div id="register-container" class="w-full max-w-sm hidden">
+            <div class="p-8 bg-white shadow-lg rounded-lg">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Đăng ký thành viên</h2>
+                <div class="space-y-4">
+                    <input id="register-name" type="text" placeholder="Tên đăng nhập" class="w-full p-3 border border-gray-300 rounded-lg">
+                    <input id="register-password" type="password" placeholder="Mật khẩu" class="w-full p-3 border border-gray-300 rounded-lg">
+                    <button id="register-btn" class="w-full bg-green-600 text-white font-bold py-3 rounded-lg hover:bg-green-700">Gửi Yêu cầu Đăng ký</button>
+                </div>
+            </div>
+            <p class="text-center mt-4 text-sm">Đã có tài khoản? <button id="show-login-btn" class="font-semibold text-blue-600 hover:underline">Đăng nhập</button></p>
+        </div>
+    </div>
+
+    <!-- Main App Container -->
+    <div id="app-container" class="main-container h-screen"></div>
+
+    <!-- Modals -->
+    <!-- ...modal code... -->
+    <script>
+    // ...toàn bộ logic JavaScript app (như đã kiểm tra ở các bước trước)...
+    </script>
 </body>
 </html>
